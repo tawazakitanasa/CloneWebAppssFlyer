@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="icon" href="/image/favicon.svg" sizes="32x32">
+    <title>The state of mobile-first design in 2022 | AppsFlyer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins%3Aital%2Cwght%400%2C400%3B0%2C600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito%3Aital%2Cwght%400%2C400%3B0%2C800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav id="nav-m" class="nav-height nav_df nav-size nav-main nav-main_pfi nav_row-start nav_aitems-center z-index_777">
+        <div class="nav_df nav-size">
+            <a class="nav-logo nav_aitems-center flex_jc-sb" href="https://www.appsflyer.com"><img src="/image/logo.svg" alt="Logo"></a>
+            <div class="nav_df nav-size">
+                <ul id="nav-list" class="nav-navbar nav_df nav-size nav-main_pr flex_fd-row mr-auto lstyle-none">
+                    <li id="nav-btn" class="parent nav_df nav-main_pr">
+                        <a class="nav-menu curs-pointer">Platform</a>
+                        <div id="nav-link" class=" child menuitmes nav_disp-none nav-main_pfi fd-column oflow-hidden">
+                            <div class="nav-subnav nav-main_pr flex_jc-sb nav_aitems-stretch flex_fw-wrap mr-auto ml-auto">
+                                <div class="nav_df">
+                                    <div class="nav_df flex_fd-row flex_fw-wrap flex_jc-sb snav-menu">
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Measure</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/measurement/">
+                                                        <b class="nav_db padg-bot_5 fw-500">Measurement suite</b>
+                                                        <span class="nav_db font-menutext">Measure every action on mobile, web and CTV</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/roi-measurement">
+                                                        <b class="nav_db padg-bot_5 fw-500">ROI measurement</b>
+                                                        <span class="nav_db font-menutext">Understand your true mobile marketing ROI</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/creative-optimization/">
+                                                        <b class="nav_db padg-bot_5 fw-500">Creative Optimization</b>
+                                                        <span class="nav_db font-menutext">Unlock creative performance with the power of AI</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Analyze</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/marketing-analytics/">
+                                                        <b class="nav_db padg-bot_5 fw-500">Marketing analytics</b>
+                                                        <span class="nav_db font-menutext">Turn insights on campaign performance into action</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/incrementality/">
+                                                        <b class="nav_db padg-bot_5 fw-500">Incrementality</b>
+                                                        <span class="nav_db font-menutext">Prove the real value of your marketing campaigns</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Engage</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/customer-experience-deep-linking/">
+                                                        <b class="nav_db padg-bot_5 fw-500">CX & deep linking</b>
+                                                        <span class="nav_db font-menutext">Boost revenue with exceptional customer experience</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/audiences/">
+                                                        <b class="nav_db padg-bot_5 fw-500">Audience segmentation</b>
+                                                        <span class="nav_db font-menutext">Create meaningful conversations with your customers</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Protect</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/fraud-protection/">
+                                                        <b class="nav_db padg-bot_5 fw-500">Fraud protection</b>
+                                                        <span class="nav_db font-menutext">Protect your marketing budget from mobile ad fraud</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Collaborate</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/privacy-cloud/">
+                                                        <b class="nav_db padg-bot_5 fw-500">Privacy Cloud</b>
+                                                        <span class="nav_db font-menutext">Collaborate with your partners in a privacy-centric way</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/data-collaboration/">
+                                                        <b class="nav_db padg-bot_5 fw-500">AppsFlyer Data Collaboration Platform</b>
+                                                        <span class="nav_db font-menutext">First-party data monetization that fuels retail media growth</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_10 padg-top_10">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/products/integrations/">
+                                                        <b class="nav_db padg-bot_5 fw-500">Partner marketplace</b>
+                                                        <span class="nav_db font-menutext">Connect to over 10,000 tech and media partners</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="links nav_df flex_fw-wrap ml-0 mr-0 nav-size font-menulist">
+                                    <ul class="nav_df nav-main_pr nav_aitems-center flex_fd-row flex-fill m-width-100 nav-size padg-bot_25 padg-top_20">
+                                        <li class="nav_df nav-main_pr padg-r_40">
+                                            <a class="nav-main_pr nav_aitems-center padg_10-0-imp s-links fw-500 arrow-btn" href="https://www.appsflyer.com/interactive-product-tours/">Interactive product tours</a>
+                                        </li>
+                                        <li class="nav_df nav-main_pr padg-r_40">
+                                            <a class="nav-main_pr nav_aitems-center padg_10-0-imp s-links fw-500 arrow-btn" href="https://www.appsflyer.com/solutions/ios/">IOS 14+ Solutions</a>
+                                        </li>
+                                        <li class="nav_df nav-main_pr padg-r_40">
+                                            <a class="nav-main_pr nav_aitems-center padg_10-0-imp s-links fw-500 arrow-btn" href="https://www.appsflyer.com/products/apis/">Data feeds & APIs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="nav-btn" class="parent nav_df nav-main_pr">
+                        <a class="nav-menu curs-pointer">Solutions</a>
+                        <div id="nav-link" class="child menuitmes nav_disp-none nav-main_pfi fd-column oflow-hidden">
+                            <div class="nav-subnav nav-main_pr flex_jc-sb nav_aitems-stretch flex_fw-wrap mr-auto ml-auto">
+                                <div class="nav_df">
+                                    <div class="nav_df flex_fd-row flex_fw-wrap flex_jc-sb snav-menu">
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Team</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/marketing/">
+                                                        <span class="nav_db padg-bot_5">Marketing</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/product/">
+                                                        <span class="nav_db padg-bot_5">Product</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/data-analytics/">
+                                                        <span class="nav_db padg-bot_5">Data & Analytics</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/research-and-development/">
+                                                        <span class="nav_db padg-bot_5">R&D</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Goal</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/regain-ios-visibility-v1/">
+                                                        <span class="nav_db padg-bot_5">Regain iOS visibility</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/kickstart-app-growth/">
+                                                        <span class="nav_db padg-bot_5">Kickstart app growth</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/scale-ua-campaigns/">
+                                                        <span class="nav_db padg-bot_5">Scale user acquisition</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/maximize-user-ltv/">
+                                                        <span class="nav_db padg-bot_5">Increase engagement & LTV</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/maximize-roas/">
+                                                        <span class="nav_db padg-bot_5">Maximize ROAS</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Industry</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/games/">
+                                                        <span class="nav_db padg-bot_5">Gaming</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/shopping/">
+                                                        <span class="nav_db padg-bot_5">Shopping</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/finance/">
+                                                        <span class="nav_db padg-bot_5">Finance</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/food-drink/">
+                                                        <span class="nav_db padg-bot_5">Food & drink</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/health-fitness/">
+                                                        <span class="nav_db padg-bot_5">Health & fitness</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/travel/">
+                                                        <span class="nav_db padg-bot_5">Travel</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Platform</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/ios/">
+                                                        <span class="nav_db padg-bot_5">iOS</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/android/">
+                                                        <span class="nav_db padg-bot_5">Android</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/pc-console-measurement/">
+                                                        <span class="nav_db padg-bot_5">PC & console</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/ctv-ott/">
+                                                        <span class="nav_db padg-bot_5">CTV & OTT</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/web-measurement/">
+                                                        <span class="nav_db padg-bot_5">Web</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/mobile-measurement/">
+                                                        <span class="nav_db padg-bot_5">Mobile</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/web3/">
+                                                        <span class="nav_db padg-bot_5">Web3</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Partnerships</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/partners/">
+                                                        <span class="nav_db padg-bot_5">Tech and media partners</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/agencies/">
+                                                        <span class="nav_db padg-bot_5">Agency partners</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/solutions/partner-program/">
+                                                        <span class="nav_db padg-bot_5">Partner Program</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="links nav_df flex_fw-wrap ml-0 mr-0 nav-size font-menulist">
+                                    <ul class="nav_df nav-main_pr nav_aitems-center flex_fd-row flex-fill m-width-100 nav-size padg-bot_25 padg-top_20">
+                                        <li class="nav_df nav-main_pr padg-r_40">
+                                            <a class="nav-main_pr nav_aitems-center padg_10-0-imp s-links fw-500 arrow-btn" href="https://www.appsflyer.com/interactive-product-tours/">Interactive product tours</a>
+                                        </li>
+                                        <li class="nav_df nav-main_pr padg-r_40">
+                                            <a class="nav-main_pr nav_aitems-center padg_10-0-imp s-links fw-500 arrow-btn" href="https://www.appsflyer.com/customers/">Customer stories</a>
+                                        </li>
+                                        <li class="nav_df nav-main_pr padg-r_40">
+                                            <a class="nav-main_pr nav_aitems-center padg_10-0-imp s-links fw-500 arrow-btn" href="https://www.appsflyer.com/appsflyer-advantage/">The AppsFlyer difference</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="nav-btn" class="parent nav_df nav-main_pr">
+                        <a class="nav-menu curs-pointer">Learn</a>
+                        <div id="nav-link" class="child menuitmes nav_disp-none nav-main_pfi fd-column oflow-hidden">
+                            <div class="nav-subnav nav-main_pr flex_jc-sb nav_aitems-stretch flex_fw-wrap mr-auto ml-auto">
+                                <div class="nav_df flex_fw-wrap">
+                                    <div class="nav_df nav-main_pr fd-column flex_gr-shr-basic-0 pad-mwidth-270 font-menulist z-ind_2">
+                                        <span class="snav-title mb-10">Resources</span>
+                                        <p class="mb-20 mt-0 color-text">
+                                            Stay informed with industry insights, the latest trends, original content, and all things AppsFlyer
+                                        </p>
+                                    </div>
+                                    <div class="nav_df flex_fd-row flex_fw-wrap flex_jc-sb snav-menu nav-main_pr flex-fill font-menulist pad-mwidth-715">
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Ecosystem</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/blog/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Blog</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/resources/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Reports & guides</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/events/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Events & webinars</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/resources/templates/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Tools & templates</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/benchmarks/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Industry benchmarks</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/blog/videos/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Videos</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/blog/podcasts/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Podcasts</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/glossary/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Glossary</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/metrics-comparison/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Metrics comparison</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <span class="padg-bot_10 nav_db font-menutitle">Customers</span>
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/customer-success-stories-v1/">
+                                                        <span class="nav_db padg-bot_5">Customer stories</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/product-news/">
+                                                        <span class="nav_db padg-bot_5">Product news</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/use-cases/">
+                                                        <span class="nav_db padg-bot_5">Use cases</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://support.appsflyer.com/hc/">
+                                                        <span class="nav_db padg-bot_5">Help center</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://dev.appsflyer.com/">
+                                                        <span class="nav_db padg-bot_5">Developer Hub</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://elevate.appsflyer.com/learn/signin">
+                                                        <span class="nav_db padg-bot_5">Learning portal</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nav-main_pr nav_df flex_gr-shr-basic-0 fd-column pad-mwidth-345 z-ind_2 font-menulist border-theme-left border-theme-color">
+                                        <div class="">
+                                            <a class="dis_inl-block padg-unset height-145" href="/resources/reports/creative-optimization">
+                                                <img src="/image/image-1-1.png" style="border-radius: 8px;">
+                                            </a>
+                                            <div class="nav_db nav-size font-menulist">
+                                                <a class="nav-main_pr nav_aitems-center padg_10-0-imp s-links fw-500 arrow-btn" href="https://www.appsflyer.com/interactive-product-tours/">New data on AI-driven creative</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="nav-btn" class="parent nav_df nav-main_pr">
+                        <a class="nav-menu curs-pointer">Company</a>
+                        <div id="nav-link" class="child menuitmes nav_disp-none nav-main_pfi fd-column oflow-hidden">
+                            <div class="nav-subnav nav-main_pr flex_jc-sb nav_aitems-stretch flex_fw-wrap mr-auto ml-auto">
+                                <div class="nav_df flex_fw-wrap">
+                                    <div class="nav_df nav-main_pr fd-column flex_gr-shr-basic-0 pad-mwidth-270 font-menulist z-ind_2">
+                                        <span class="snav-title mb-10">Who we are</span>
+                                        <p class="mb-20 mt-0 color-text">
+                                            Find out more about our history, our team, what we stand for, and why we do what we do
+                                        </p>
+                                    </div>
+                                    <div class="nav_df flex_fd-row flex_fw-wrap flex_jc-sb snav-menu nav-main_pr flex-fill font-menulist pad-mwidth-715">
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/company/about/">
+                                                        <span class="nav_db padg-bot_5 text-hov">About us</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/company/newsroom/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Newsroom</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/blog/ceo/">
+                                                        <span class="nav_db padg-bot_5 text-hov">CEO blog spot</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/trust/">
+                                                        <span class="nav_db padg-bot_5 text-hov">Trust hub</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-main_pr fd-column flex-fill pad-value nav-size z-ind_2">
+                                            <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://careers.appsflyer.com/">
+                                                        <span class="nav_db padg-bot_5">Careers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/company/social-impact/">
+                                                        <span class="nav_db padg-bot_5">Social impact</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                    <a class="padg-unset linehei-20" href="https://www.appsflyer.com/company/contact/">
+                                                        <span class="nav_db padg-bot_5">Contact</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nav-main_pr nav_df flex_gr-shr-basic-0 fd-column flex_gr-shr-basic-25 pad-mwidth-345 z-ind_2 font-menulist border-theme-left border-theme-color">
+                                        <a class="nav_db font-menutitle" style="padding: 0 0 5px 0; line-height: 28px;">From our CEO</a>
+                                        <ul class="nav_df nav-main_pr fd-column font-menulist">
+                                            <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                <a class="padg-unset linehei-20" href="https://www.appsflyer.com/blog/ceo/unbiased-independent-ecosystem-future/">
+                                                    <span class="nav_db padg-bot_5">The future of our ecosystem and web</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                <a class="padg-unset linehei-20" href="https://www.appsflyer.com/blog/ceo/user-privacy-ios-14-idfa/">
+                                                    <span class="nav_db padg-bot_5">On privacy and user experience</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav_df nav-main_pr padg-bot_5 padg-top_5">
+                                                <a class="padg-unset linehei-20" href="https://www.appsflyer.com/blog/ceo/aggregated-advanced-privacy/">
+                                                    <span class="nav_db padg-bot_5">Aggregated advanced privacy</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="nav-btn" class="parent nav_df nav-main_pr">
+                        <a class="single-nav" href="https://www.appsflyer.com/pricing/">Pricing</a>
+                    </li>
+                </ul>
+                <div class="nav_df nav_aitems-center flex_fd-row mb-0 mr-0 mt-0 ml-auto">
+                    <ul class="lang-box nav_df nav-main_pr flex_fd-row">
+                        <li class="menu-lang nav_df nav-main_pr nav_aitems-flexstart fd-column curs-pointer">
+                            <span class="lang-list nav_df nav-main_pr nav_aitems-center flex_jc-fs nav-size lang-btn z-index_778 font-menulist fw-400 let-space_0-45">
+                                <i class="world-icon font-menulist mr-7"></i>
+                                English
+                            </span>
+                            <ul class="sub-list posi-adso z-ind_init curs-pointer">
+                                <li class="nav_df nav_aitems-flexstart nav-main_pr fd-column padg-l_30 padg-r_30 padg-bot_10 padg-top_10 font-menulist fw-400">
+                                    <a class="nav_db text-color text-deco_none linehei-20" href="#">Français</a>
+                                </li>
+                                <li class="nav_df nav_aitems-flexstart nav-main_pr fd-column padg-l_30 padg-r_30 padg-bot_10 padg-top_10 font-menulist fw-400">
+                                    <a class="nav_db text-color text-deco_none linehei-20" href="#">日本語</a>
+                                </li>
+                                <li class="nav_df nav_aitems-flexstart nav-main_pr fd-column padg-l_30 padg-r_30 padg-bot_10 padg-top_10 font-menulist fw-400">
+                                    <a class="nav_db text-color text-deco_none linehei-20" href="#">Русский</a>
+                                </li>
+                                <li class="nav_df nav_aitems-flexstart nav-main_pr fd-column padg-l_30 padg-r_30 padg-bot_10 padg-top_10 font-menulist fw-400">
+                                    <a class="nav_db text-color text-deco_none linehei-20" href="#">Español</a>
+                                </li>
+                                <li class="nav_df nav_aitems-flexstart nav-main_pr fd-column padg-l_30 padg-r_30 padg-bot_10 padg-top_10 font-menulist fw-400">
+                                    <a class="nav_db text-color text-deco_none linehei-20" href="#">简体中文</a>
+                                </li>
+                                <li class="nav_df nav_aitems-flexstart nav-main_pr fd-column padg-l_30 padg-r_30 padg-bot_10 padg-top_10 font-menulist fw-400">
+                                    <a class="nav_db text-color text-deco_none linehei-20" href="#">한국어</a>
+                                </li>
+                                <li class="nav_df nav_aitems-flexstart nav-main_pr fd-column padg-l_30 padg-r_30 padg-bot_10 padg-top_10 font-menulist fw-400">
+                                    <a class="nav_db text-color text-deco_none linehei-20" href="#">Deutsch</a>
+                                </li>
+                                <li class="nav_df nav_aitems-flexstart nav-main_pr fd-column padg-l_30 padg-r_30 padg-bot_10 padg-top_10 font-menulist fw-400">
+                                    <a class="nav_db text-color text-deco_none linehei-20" href="#">Portuguese</a>
+                                </li>
+                                <li class="nav_df nav_aitems-flexstart nav-main_pr fd-column padg-l_30 padg-r_30 padg-bot_10 padg-top_10 font-menulist fw-400">
+                                    <a class="nav_db text-color text-deco_none linehei-20" href="#">Tiếng Việt</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="login-box nav_df nav_aitems-center nav-main_pr flex_fd-row flex_jc-sb snav_fsize-18 fw-400 color-text">
+                        <li class="nav_df nav-main_pr flex_fd-row nav_aitems-flexstart font-menulist text-color">
+                            <a class="login-btn nav_df nav-main_pr flex_jc-center nav-text-color let-space_0-45" href="https://hq1.appsflyer.com/auth/login">
+                                <i class="login-icon mr-7"></i>
+                                Login
+                            </a>
+                        </li>
+                        <li class="nav_df nav-main_pr nav_aitems-center fd-column ml-20 font-menulist text-color">
+                            <a class="signup-btn nav_db nav-main_pr z-ind_1 talign-center fw-500 text-deco_none text-color verti-ali-mid bord-rad_8 boxshadow-none ouline-none" href="https://www.appsflyer.com/sign-up/">Sign up free</a>
+                        </li>
+                        <li class="nav_df nav-main_pr nav_aitems-center fd-column ml-20 font-menulist text-color">
+                            <a class="btn nav_db nav-main_pr btn-size-sub z-ind_1 font-menulist fw-500 nav-text-color btn-textsub verti-ali-mid btn-bor-color boxshadow-none ouline-none bord-rad_8" href="">Contact sales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="" class="sub-nav nav_df nav-main_pfi nav_aitems-center nav_row-start nav-main nav-size snav-size snav_fsize-18 color-text snav-border .z-index_776">
+        <div class="nav_df nav_aitems-center flex_fw-nowrap flex_jc-sb m-width-1440 nav-size">
+            <span class="snav_fsize-20 nav-text-color">
+                <a class="dis_inl-block nav-text-color snav-blog" href="https://www.appsflyer.com/blog/">Blog</a>
+            </span>
+            <div class="nav_df nav_aitems-center flex-bs_auto flex_fw-wrap flex_fd-row">
+                <div class="fd-column flex_jc-fe height-100">
+                    <ul class="nav_df nav-main_pr flex_fd-row ml-80">
+                        <li class="nav_df nav-main_pr nav_aitems-flexstart fd-column mr-8">
+                            <a class="nav_db nav-main_pr nav-menu fsize-header-14 let-space_0-45 text-color text-deco_none" href="https://www.appsflyer.com/blog/measurement-analytics/">Measurement & analytics</a>
+                        </li>
+                        <li class="nav_df nav-main_pr nav_aitems-flexstart fd-column mr-8">
+                            <a class="nav_db nav-main_pr nav-menu fsize-header-14 let-space_0-45 text-color text-deco_none" href="https://www.appsflyer.com/blog/mobile-marketing/">Mobile marketing</a>
+                        </li>
+                        <li class="nav_df nav-main_pr nav_aitems-flexstart fd-column mr-8">
+                            <a class="nav_db nav-main_pr nav-menu fsize-header-14 let-space_0-45 text-color text-deco_none" href="https://www.appsflyer.com/blog/mobile-fraud/">Mobile fraud</a>
+                        </li>
+                        <li class="nav_df nav-main_pr nav_aitems-flexstart fd-column mr-8">
+                            <a class="nav_db nav-main_pr nav-menu fsize-header-14 let-space_0-45 text-color text-deco_none" href="https://www.appsflyer.com/blog/trends-insights/">Trends & insights</a>
+                        </li>
+                        <li class="nav_df nav-main_pr nav_aitems-flexstart fd-column mr-8">
+                            <a class="nav_db nav-main_pr nav-menu fsize-header-14 let-space_0-45 text-color text-deco_none" href="https://www.appsflyer.com/blog/tips-strategy/">Tips & strategy</a>
+                        </li>
+                        <li class="nav_df nav-main_pr nav_aitems-flexstart fd-column mr-8">
+                            <a class="nav_db nav-main_pr nav-menu fsize-header-14 let-space_0-45 text-color text-deco_none" href="https://www.appsflyer.com/blog/topic/deep-linking/">Deep linking</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav_df nav_aitems-center flex_jc-fe mt-10 mb-10">
+                <ul class="nav_df nav-main_pr flex_fd-row ml-20">
+                    <li class="nav_db nav-main_pr nav_aitems-flexstart fd-column mt-auto mr-8 mb-auto ml-8 ">
+                        <button class="search-btn nav-main_pr oflow-visible fw-600 linehei_32 text-deco_none textsbar-color curs-pointer ouline-none bord-rad_8">
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 22px; height: 33px; width: 33px; color: #220d4e;"></i>
+                        </button>
+                    </li>
+                    <li class="nav_db nav-main_pr nav_aitems-flexstart fd-column ml-8">
+                        <a class="signup-btn nav_db nav-main_pr z-ind_1 talign-center fw-500 text-deco_none text-color verti-ali-mid bord-rad_8 boxshadow-none ouline-none font-menulist" href="#">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </nav>    
+    <main class="container padg-top_130 snav_fsize-18 color-text">
+        <section class="article nav-main_pr padg-bot_40">
+            <div class="margin_lr padg_lr-20 m-width-1260 nav-size">
+                <div class="nav_df nav_aitems-center flex_fd-row flex_fw-wrap flex_jc-sb snav-menu padg-top_60" style="width: 1260px;">
+                    <div class="nav_df nav-main_pr nav-list flex_gr-shr-basic-50 m-width-50 padg-top_20 padg-r_20 padg-l_20 nav-size">
+                        <ul class="nav_df flex_fw-wrap flex_jc-fs nav-size">
+                            <li class="crumbs nav-main_pr mb-5 mr-10 mt-5 ml-0 fsize-header-14 text-uppercase list-style-none">
+                                <a class="dis_inl-block nav-text-color" href="https://www.appsflyer.com/blog/">Blog</a>
+                            </li>
+                            <li class="nav-main_pr mb-5 mr-10 mt-5 ml-0 fsize-header-14 text-uppercase list-style-none">
+                                <a class="dis_inl-block nav-text-color" href="https://www.appsflyer.com/blog/mobile-marketing/">Mobile marketing</a>
+                            </li>
+                        </ul>
+                        <h1 class="padg-top_15 padg-bot_15 mt-0 mb-5 article-title text-color">The mobile-first design essentials for 2022</h1>
+                        <span class="nav_df nav_aitems-center author-size">
+                            <figure class="author-box nav-main_pr mr-10 ml-0 mt-0 mb-0">
+                                <img class="aut-image" src="/image/author.jpeg" alt="author">
+                            </figure>
+                            By Einav Mor-Samuels
+                        </span>
+                    </div>
+                    <div class="nav_df nav-main_pr nav_aitems-center flex_jc-center img-box nav-size padg-bot_0 padg-top_10 padg-l_20 padg-r_20">
+                        <figure class="nav-main_pr oflow-hidden margin-0">
+                            <img class="header-img" src="/image/mobile-first-deisgn-featured-square-1.jpg" alt="">
+                        </figure>
+                    </div>
+                    <aside class="nav-main_pr flex_gr-shr-basic-100 mb-15 mt-40 padg-r_20 padg-l_20 m-width-100 nav-size">
+                        <ul class="nav_df flex_jc-fs padg-bot_2-5 padg-top_2-5 border-timeline">
+                            <li class="nav_df mb-10 mt-10 fsize-timeline text-color list-style-none">
+                                <span>Mar 07, 2022</span>
+                            </li>
+                            <li class="nav_db padg-l_0 mb-10 mt-10 mr-0 ml-auto fsize-timeline">5 min read</li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="body-article nav_df nav-main_pr flex_jc-fs padg-r_0 padg-l_0 padg-top_40">
+                    <aside class="index nav-main_pr padg-r_0 padg-l_0 padg-bot_50 width-230 text-color">
+                        <div class="posi-sticky top-147">
+                            <nav class="">
+                                <h6 class="mt-0 mb-20 fsize-header-13_5 linehei_18-5">What's inside?</h6>
+                                <div class="nav_df nav-main_pr fd-column z-ind_1 fsize-header-13_5">
+                                    <div class="posi-sticky mb-0 padg-bot_0 width-230 top-100 oflow-y_auto bord-rad_8">
+                                        <ol class="nav-main_pr fd-column padg-l_22 lstyle-decimal">
+                                            <li class="side-bar nav-main_pr margin-0 padg-bot_5 padg-top_5 padg-l_5 padg-r_0 linehei_18 textsbar-color">
+                                                <a href="#title-content-1" class="nav_df fd-column padg-l_5 padg-top_8 padg-bot_8 nav-text-color">What is mobile-first design?</a>
+                                            </li>
+                                            <li class="side-bar nav-main_pr margin-0 padg-bot_5 padg-top_5 padg-l_5 padg-r_0 linehei_18 textsbar-color">
+                                                <a href="#title-content-2" class="nav_df fd-column padg-l_5 padg-top_8 padg-bot_8 nav-text-color">Why mobile-first?</a>
+                                            </li>
+                                            <li class="side-bar nav-main_pr margin-0 padg-bot_5 padg-top_5 padg-l_5 padg-r_0 linehei_18 textsbar-color">
+                                                <a href="#title-content-3" class="nav_df fd-column padg-l_5 padg-top_8 padg-bot_8 nav-text-color">A brief history</a>
+                                            </li>
+                                            <li class="side-bar nav-main_pr margin-0 padg-bot_5 padg-top_5 padg-l_5 padg-r_0 linehei_18 textsbar-color">
+                                                <a href="#title-content-4" class="nav_df fd-column padg-l_5 padg-top_8 padg-bot_8 nav-text-color">How to implement it</a>
+                                            </li>
+                                            <li class="side-bar nav-main_pr margin-0 padg-bot_5 padg-top_5 padg-l_5 padg-r_0 linehei_18 textsbar-color">
+                                                <a href="#title-content-5" class="nav_df fd-column padg-l_5 padg-top_8 padg-bot_8 nav-text-color">Principles and best practices</a>
+                                            </li>
+                                            <li class="side-bar nav-main_pr margin-0 padg-bot_5 padg-top_5 padg-l_5 padg-r_0 linehei_18 textsbar-color">
+                                                <a href="#title-content-6" class="nav_df fd-column padg-l_5 padg-top_8 padg-bot_8 nav-text-color">Key takeaways</a>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </aside>
+                    <div class="content linehei_32 fsize-header-16">
+                        <div class="oflow-wrap_brword">
+                            <p>The first time the mobile-first design approach was talked about was way back in 2010, almost 12 years ago.</p>
+                            <p>The CEO of Google at the time, Eric Schmidt, <a href="https://venturebeat.com/2010/04/12/eric-schmidt-mobile-first/">said</a> Google would be pivoting to this design approach. Now, in 2022, it’s estimated that <a href="https://www.statista.com/statistics/330695/number-of-smartphone-users-worldwide/">7 billion</a> (yes, with a “B’”) people are smartphone users. These 7 billion are the mobile market proof that Schmidt knew what was up when he said, “mobile will ultimately be the way you provision most of your services.”</p>
+                            <p>Today, developers should be embracing the mobile-first design approach if they want to have a piece of that 7 billion (and growing) digital consuming market.</p>
+                            <h2 id="title-content-1" class="mb-5 mt-0 padg-bot_15 padg-top_20 text-content text-color">What is mobile-first design?</h2>
+                            <div class="m-width-800 img-content">
+                                <figure class="float-none oflow-hidden margin-0 talign-center bord-rad_8">
+                                    <img class="m-width-100 nav-size height-auto" src="/image/what-is-mobile-first-design-1.jpg" alt="What is mobile-first design?">
+                                </figure>
+                            </div>
+                            <p>Traditionally, developers would scale down from desktop to mobile, but nowadays, designing with mobile top of mind means starting your product from the mobile end <em>first</em> and then expanding its features to build a desktop or tablet version.&nbsp;</p>
+                            <p>The mobile-first design approach aims to prototype and create better user experiences by starting the design process from the smallest of screens, which helps ensure that the user’s experience will be seamless on any device.</p>
+                            <h3 class="mb-5 mt-0 padg-bot_15 padg-top_0 text-color title-size_24">Mobile-first: Web or app?</h3>
+                            <p>In 2022, companies need both a mobile web presence and a mobile app, and with <a href="https://quoracreative.com/article/mobile-marketing-statistics">57% of consumers</a> willing to ditch a company with a poor mobile experience, the necessity of the mobile-first philosophy has never been clearer.</p>
+                            <p><a href="https://www.nike.com/">Nike</a> is a brand that highlights the long-term business <a href="https://www.thedrum.com/news/2015/03/20/how-nike-became-mobile-first-retailer">benefits</a> of having both a mobile-first website and app. The site reaches Nike’s broad global audience with a seamless user experience. And to retain those users, the site will entice users to install the app onto their device for even more benefits, like exclusive offers and rewards.&nbsp;</p>
+                            <p>How your users feel about their mobile web experiences can determine whether or not they will take the next step and install your mobile apps.</p>
+                            <p>Today, in catering to 7-billion digital consumers, companies <em>must</em> consider mobile-first web and app design to capture, retain, and monetize those users.</p>
+                            <h2 id="title-content-2" class="mb-5 mt-0 padg-bot_15 padg-top_20 text-content text-color">Why mobile-first? 2 key advantages to mobile-first design</h2>
+                            <p>Embracing mobile-first design means that you are assuring your users that no matter the platform, they can expect a responsive UX. Approaching design this way simplifies and compresses your information into manageable chunks — but there are even more and better advantages to taking this approach:</p>
+                            <ol class="mt-20 mb-20 padg-l_20">
+                                <li class="padg-l_15"><strong>Increased engagement</strong>. <a href="https://medium.com/@Cleveroad/how-mobile-first-web-design-is-different-from-adaptive-and-responsive-c5a86ef3d4a4">Conversion rates</a> “on mobile devices have grown 64% compared to the average conversion on desktops.”</li>
+                                <li class="padg-l_15"><strong>Better retention.</strong> As previously <a href="https://www.appsflyer.com/blog/tips-strategy/mobile-first-strategy/">discussed</a>, almost 66% of enterprises identify as mobile-first, with a growing number of enterprise-sized brands seeing mobile as a highly strategic acquisition and retention channel.</li>
+                            </ol>
+                            <p>It has become abundantly clear that to <a href="https://www.appsflyer.com/resources/guides/app-engagement-user-retention/">engage and retain</a> digital consumers, the mobile-first philosophy is where it’s at.</p>
+                            <h2 id="title-content-3" class="mb-5 mt-0 padg-bot_15 padg-top_20 text-content text-color">How did we get here? A brief history of mobile-first design</h2>
+                            <p>By the time the millennium rolled around, designing a site to work on different screen sizes was fast becoming the norm. However, to do this successfully, developers had to use a lot of tricks — that is, until the great paradigm shift happened in 2010.</p>
+                            <div class="m-width-800 img-content">
+                                <figure class="float-none oflow-hidden margin-0 talign-center bord-rad_8">
+                                    <img class="m-width-100 nav-size height-auto" src="/image/mobile-first-design-timeline-1.jpg" alt="What is mobile-first design?">
+                                </figure>
+                            </div>
+                            <p>Here’s a brief overview and timeline of how it all happened:</p>
+                            <h3 class="mb-5 mt-0 padg-bot_15 padg-top_0 text-color title-size_24">Progressive enhancement</h3>
+                            <p>Progressive enhancement is a web design strategy that emphasizes <em>content</em> first. This allows anyone to access the basic content and functionality of a page. At the same time, users with better browser features or faster internet speeds receive the enhanced version automatically.</p>
+                            <p>In 2003, developers Steve Champeon and Nick Finck gave a presentation called <a href="http://www.hesketh.com/thought-leadership/our-publications/inclusive-web-design-future">Inclusive Web Design for the Future</a> because engineers and developers were already looking for ways to provide better overall accessibility, content availability, and mobile browser capabilities. They called this new approach to web development progressive enhancement.</p>
+                            <h3 class="mb-5 mt-0 padg-bot_15 padg-top_0 text-color title-size_24">Responsive web design (RWD)</h3>
+                            <p>A responsive design means that your design works beautifully on all devices, including desktops, smartphones, and tablets.</p>
+                            <p>The same year Eric Schmidt initiated the great paradigm shift, Ethan Marcotte published a blog post titled <a href="https://alistapart.com/article/responsive-web-design/">Responsive Web Design</a>. Both of these ultimately set off a chain of events culminating in mobile-first being the design priority in 2022, where “more than ever, we’re designing work meant to be viewed along a gradient of different experiences.”</p>
+                            <p>Responsive design looks like readers have perfect readability and the same if not extremely similar user experiences, regardless of the device.</p>
+                            <section class="nav_df nav-main_pr fd-column mb-50 mt-10 talign-center">
+                                <div class="ml-0 mr-0 padg_lr-20 nav-size m-width-1260">
+                                    <div class="nav_df flex_fw-wrap ml-0 mr-0 border-timeline">
+                                        <div class="nav_df fd-column margin-0 padg_lr-20">
+                                            <header class="nav_df nav_aitems-center fd-column padg-top_40">
+                                                <img class="m-width-123 nav-size height-auto" src="/image/logo-the-flyer.svg" alt="" title="">
+                                                <h3 class="mb-5 mt-0 padg-bot_20 padg-top_15 text-color text-content fw-600">Get the latest marketing news and expert insights delivered to your inbox</h3>
+                                            </header>
+                                            <footer class="nav_df flex_jc-center padg-bot_40 nav-size">
+                                                <a class="btn nav_db nav-main_pr btn-size-sub z-ind_1 font-menulist fw-500 nav-text-color btn-textsub verti-ali-mid btn-bor-color boxshadow-none ouline-none bord-rad_8" href="">Subscribe</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <h3 class="mb-5 mt-0 padg-bot_15 padg-top_0 text-color title-size_24">Mobile-first indexing</h3>
+                            <p>On July 1, 2019, Google <a href="https://developers.google.com/search/mobile-sites/mobile-first-indexing">announced</a> that “mobile-first indexing is enabled by default for all new websites.”&nbsp;</p>
+                            <p>This meant that Google predominantly uses the mobile version of the content for indexing and ranking. Since most users access Google Search with a mobile device, Googlebot now primarily crawls and indexes pages with the <a href="https://developers.google.com/search/docs/advanced/crawling/overview-google-crawlers">smartphone agent</a>.</p>
+                            <p>So, 16 years after progressive enhancement was introduced and nine years after the great paradigm shift, Eric Schmidt’s declaration about a mobile-first future became a reality.</p>
+                            <h2 id="title-content-4" class="mb-5 mt-0 padg-bot_15 padg-top_20 text-content text-color">How to implement a mobile-first process</h2>
+                            <p>Let’s say you’re a developer working on a site for a popular clothing store chain. Mobile-first design means you understand your user and what they expect from a mobile site. For instance, your end-user is probably on their phone looking for store hours, location, or how to contact you.</p>
+                            <p>Implementing this design strategy has you scaling up from the smallest to the largest dimension.</p>
+                            <div class="m-width-800 img-content">
+                                <figure class="float-none oflow-hidden margin-0 talign-center bord-rad_8">
+                                    <img class="m-width-100 nav-size height-auto" src="/image/mobile-first-design-principles-1.jpg" alt="What is mobile-first design?">
+                                </figure>
+                            </div>
+                            <ul class="mt-20 mb-20 padg-l_20 lstyle-disc">
+                                <li class="padg-l_15"><strong>Mobile</strong>: Lean content like store hours, location, and contact info prioritized — plus collapsible menus and widgets.</li>
+                            </ul>
+                            <ul class="mt-20 mb-20 padg-l_20 lstyle-disc">
+                                <li class="padg-l_15"><strong>Tablet→Desktop</strong>: Higher-fidelity visual elements, more high-definition photos, and more whitespace. Desktop sites will serve full-size imagery like ads and promotional materials (which on a mobile device is stripped and, in some cases, completely removed).</li>
+                            </ul>
+                            <section class="nav-main_pr mb-0 padg_lr-20 padg-bot_30 padg-top_80">
+                                <div class="ml-0 mr-0 padg-l_0 padg-r_0 m-width-1260 nav-size">
+                                    <div class="nav_df nav-main_pr nav_aitems-center fd-column flex_fw-wrap flex_jc-center ml-0 mr-0 talign-center banner-color bord-rad_16">
+                                        <div class="nav-main_pr flex_gr-shr-basic-100 m-width-100 nav-size padg-bot_50 padg-top_50 padg-l_20 padg-r_20 text-deco_none">
+                                            <span class="fsize-header-14 author-size text-uppercase let-space_0-7 btn-textsub">guide</span>
+                                            <h3 class="mb-5 mt-0 padg-top_10 title-size_24 btn-textsub">Deep linking 101: Everything you need to know</h3>
+                                            <a class="btn-arrow-w dis_inl-block nav-main_pr nav_aitems-center padg-bot_10 padg-top_5 text-deco_none author-size linehei_21 btn-textsub fw-500 arrow-btn" href="https://www.appsflyer.com/solutions/ios/">Improve your UX </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <h2 id="title-content-5" class="mb-5 mt-0 padg-bot_15 padg-top_20 text-content text-color">Mobile-first principles and best practices</h2>
+                            <p>The first step in implementing this design strategy is to know your users.&nbsp;</p>
+                            <p>Once you understand what mobile end-users have come to expect from a mobile experience, web designers and app developers should keep in mind the following principles to be able to provide an optimal mobile-first web design:</p>
+                            <ul class="mt-20 mb-20 padg-l_20 lstyle-disc">
+                                <li class="padg-l_15"><strong>Prioritize content</strong>: For mobile-first design, content is king, and a lean approach to information architecture is paramount to the mobile experience.</li>
+                            </ul>
+                            <ul class="mt-20 mb-20 padg-l_20 lstyle-disc">
+                                <li class="padg-l_15"><strong>Intuitive navigation</strong>: Simply put, users have come to expect certain functionalities in certain places. When developing, think about things like where users expect to find functionality, like the menu or back buttons. If the user expects the menu button will be at the bottom left, intuit that design into each screen.</li>
+                                <li class="padg-l_15"><strong>Test on real devices</strong>: This goes without saying (but we said it anyway).</li>
+                            </ul>
+                            <h2 id="title-content-6" class="mb-5 mt-0 padg-bot_15 padg-top_20 text-content text-color">Key takeaways</h2>
+                            <p>Since the great paradigm shift, post-2010 web users across the globe have transitioned from desktop to mobile devices, and the trend seems to be growing exponentially. Therefore, it stands to reason that, from designers to developers, the mobile audience is <strong><em>the</em></strong> priority.</p>
+                            <p>Here are the five things you need to keep in mind when it comes to mobile-first design in 2022:</p>
+                            <ol class="mt-20 mb-20 padg-l_20 lstyle-decimal">
+                                <li class="padg-l_15">The mobile-first philosophy is starting product design from the mobile end <em>first</em> and then expanding its features to create a tablet or desktop version.<br></li>
+                                <li class="padg-l_15">Adhering to this design philosophy increases engagement and retention on your sites, and Google will defer to mobile versions of the content for indexing and ranking.<br></li>
+                                <li class="padg-l_15">Implementing this design strategy keeps users and their experiences at the front of developers’ minds.<br></li>
+                                <li class="padg-l_15">If content is king here, then intuitive navigation is queen.&nbsp;</li>
+                            </ol>
+                        </div>
+                        <div class="nav_df flex_fw-wrap mt-20 padg-top_20">
+                            <a class="mb-20 mr-20 tag-set bord-rad_8 author-size nav-text-color color-text" href="https://www.appsflyer.com/blog/topic/ecommerce/">eCommerce</a>
+                            <a class="mb-20 mr-20 tag-set bord-rad_8 author-size nav-text-color color-text" href="https://www.appsflyer.com/blog/topic/gaming/">Gaming</a>
+                            <a class="mb-20 mr-20 tag-set bord-rad_8 author-size nav-text-color color-text" href="https://www.appsflyer.com/blog/topic/user-acquisition/">User acquisition</a>
+                            <a class="mb-20 mr-20 tag-set bord-rad_8 author-size nav-text-color color-text" href="https://www.appsflyer.com/blog/topic/user-experience/">User experience</a>
+                        </div>
+                        <footer class="padg-top_20">
+                            <section class="nav-main_pr mt-10">
+                                <div class="m-width-1260 padg-l_20 padg-r_20 nav-size">
+                                    <div class="nav_df flex_fw-wrap snav-menu width-unset">
+                                        <div class="nav_df nav-main_pr flex-fill nav-list flex_fd-row m-width-100 padg-l_0 padg-r_0 padg-top_30 padg-bot_30 nav-size aut-box">
+                                            <figure class="nav-main_pr aut-box_fig aut-box_img margin-0">
+                                                <img class="aut-image" src="/image/author.jpeg">
+                                            </figure>
+                                            <div class="padg-l_30 padg-r_10 padg-top_0 aut-box_ctnt">
+                                                <h3 class="mb-0 mt-0 padg-bot_2-5 snav_fsize-18 linehei_30 fw-400 text-color" >Einav Mor-Samuels</h3>
+                                                <div>With extensive experience in digital marketing, Einav is a Content Writer at AppsFlyer. Over the course of the past 15 years, she has gained ample experience in the mobile marketing landscape, researching market trends, and offering tailored solutions to customers' digital problems. Einav fuels her content with data-driven insights, making even the most complex of topics accessible and clear.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="nav_df fd-column ml--20 padg-bot_30 padg-top_65 padg-r_45 padg-l_45 width-760 talign-center">
+                                <h2 class="mt-0 mb-5 padg-bot_10 text-content text-color">
+                                    <span class="ml-0 padg-l_20 padg-r_20">Share this article</span>
+                                </h2>
+                                <ul class="nav_df nav_aitems-center flex_fd-row flex_jc-center mt-10 padg-l_20">
+                                    <li class="mr-20 padg-bot_2-5 padg-top_2-5">
+                                        <a class="nav_df nav-main_pr nav_aitems-center flex_jc-center padg-2 margin-0 link-box text-deco_none color-text bg-color bord-rad_4" href="#">
+                                            <i class="link-icon fsize-header-16 btn-textsub"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mr-20 padg-bot_2-5 padg-top_2-5">
+                                        <a class="nav_df nav-main_pr nav_aitems-center flex_jc-center padg-2 margin-0 link-box text-deco_none color-text bg-color bord-rad_4" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.appsflyer.com/blog/mobile-marketing/mobile-first-design/">
+                                            <i class="linkedin-icon snav_fsize-18 btn-textsub"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mr-20 padg-bot_2-5 padg-top_2-5">
+                                        <a class="nav_df nav-main_pr nav_aitems-center flex_jc-center padg-2 margin-0 link-box text-deco_none color-text bg-color bord-rad_4" href="https://twitter.com/intent/tweet?url=https://www.appsflyer.com/blog/mobile-marketing/mobile-first-design/">
+                                            <i class="twitter-icon snav_fsize-20 btn-textsub"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mr-20 padg-bot_2-5 padg-top_2-5">
+                                        <a class="nav_df nav-main_pr nav_aitems-center flex_jc-center padg-2 margin-0 link-box text-deco_none color-text bg-color bord-rad_4" href="https://twitter.com/intent/tweet?url=https://www.appsflyer.com/blog/mobile-marketing/mobile-first-design/">
+                                            <i class="fb-icon snav_fsize-18 btn-textsub"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                    <aside class="secon-banner nav-main_pr padg-bot_50 width-230 text-color">
+                        <nav class="posi-sticky top-147">
+                            <div class="nav_df flex_jc-fe">
+                                <a href="https://www.appsflyer.com/resources/reports/creative-optimization/">
+                                    <img class="m-width-100 color-text bord-rad_16" width="230" height="311" src="/image/image-3.png" sizes="(max-width: 230px) 100vw, 230px">
+                                </a>
+                            </div>
+                        </nav>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <section class="re-article nav-main_pr oflow-y_visible padg-bot_60 padg-top_80">
+            <div class="nav-main_pr m-width-1260 nav-size ml-auto mr-auto padg-l_20 padg-r_20 z-ind_1 fw-400">   
+                <div class="nav_df flex_fw-wrap ml--20 mr--20">
+                    <div class="nav-main_pr m-width-33 flex_gr-shr-basic-33 nav-size padg-l_20 padg-r_20">
+                        <header class="padg-bot_20">
+                            <h3 class="mb-5 mt-0 fsize-header-16 font-menutitle let-space_0-7 text-uppercase text-article">Read this next</h3>
+                        </header>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <figure class="nav-main_pr margin-0 oflow-hidden padg-bot_50per nav-size bord-rad_8">
+                                <a class="dp-block nav_aitems-center text-deco_none color-text" href="https://www.appsflyer.com/blog/mobile-marketing/dynamic-product-ads/">
+                                    <img class="aut-image" src="/image/53231.SEO-Blog-Post_1200x630.jpg" alt="">
+                                </a>
+                            </figure>
+                            <header class="dp-flex fd-column padg-top_20">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">9 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/mobile-marketing/dynamic-product-ads/">
+                                        <span class="margin-0 padg-top_15 fsize-21-5 fw-600 linehei_32 text-color">Automate your ad personalization with dynamic product ads</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <header class="dp-flex fd-column">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">3 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/mobile-marketing/ad-attribution-kit-wwdc24/">
+                                        <span class="margin-0 padg-top_15 fsize-19 fw-600 linehei_32 text-color">WWDC24 and AdAttributionKit: Keep calm and SKAN on</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <header class="dp-flex fd-column">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">6 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/mobile-marketing/mau-recap/">
+                                        <span class="margin-0 padg-top_15 fsize-19 fw-600 linehei_32 text-color">How to win in Vegas: AppsFlyer’s 2024 MAU recap</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <header class="dp-flex fd-column">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">5 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/mobile-marketing/oem-growth-strategy/">
+                                        <span class="margin-0 padg-top_15 fsize-19 fw-600 linehei_32 text-color">7 Reasons mobile OEMs should be part of every marketer's growth strategy</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <div class="nav-main_pr m-width-33 flex_gr-shr-basic-33 nav-size padg-l_20 padg-r_20">
+                        <header class="padg-bot_20">
+                            <h3 class="mb-5 mt-0 fsize-header-16 font-menutitle let-space_0-7 text-uppercase text-article">More like this</h3>
+                        </header>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <figure class="nav-main_pr margin-0 oflow-hidden padg-bot_50per nav-size bord-rad_8">
+                                <a class="dp-block nav_aitems-center text-deco_none color-text" href="https://www.appsflyer.com/blog/measurement-analytics/insights-commerce-media-growth/">
+                                    <img class="aut-image" src="/image/52629-Feature-image-1200x1200-1.jpg" alt="">
+                                </a>
+                            </figure>
+                            <header class="dp-flex fd-column padg-top_20">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">8 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/measurement-analytics/insights-commerce-media-growth/">
+                                        <span class="margin-0 padg-top_15 fsize-21-5 fw-600 linehei_32 text-color">How insights aid commerce media growth</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <header class="dp-flex fd-column">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">5 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/trends-insights/online-offline-retail/">
+                                        <span class="margin-0 padg-top_15 fsize-19 fw-600 linehei_32 text-color">Bridging the gap between online and offline retail</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <header class="dp-flex fd-column">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">6 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/trends-insights/value-paid-media-recession/">
+                                        <span class="margin-0 padg-top_15 fsize-19 fw-600 linehei_32 text-color">Where to invest: the value of continuing to invest in paid media during a recession</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <header class="dp-flex fd-column">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">6 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/trends-insights/driving-loyalty-ltv/">
+                                        <span class="margin-0 padg-top_15 fsize-19 fw-600 linehei_32 text-color">Driving loyalty and lifetime value (LTV) in challenging economic conditions</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                    <div class="nav-main_pr m-width-33 flex_gr-shr-basic-33 nav-size padg-l_20 padg-r_20">
+                        <header class="padg-bot_20">
+                            <h3 class="mb-5 mt-0 fsize-header-16 font-menutitle let-space_0-7 text-uppercase text-article">Trending</h3>
+                        </header>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <figure class="nav-main_pr margin-0 oflow-hidden padg-bot_50per nav-size bord-rad_8">
+                                <a class="dp-block nav_aitems-center text-deco_none color-text" href="https://www.appsflyer.com/blog/tips-strategy/mobile-game-marketing/">
+                                    <img class="aut-image" src="/image/53293-Mobile-game-marketing-1200x630-1.png" alt="">
+                                </a>
+                            </figure>
+                            <header class="dp-flex fd-column padg-top_20">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">11 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/tips-strategy/mobile-game-marketing/">
+                                        <span class="margin-0 padg-top_15 fsize-21-5 fw-600 linehei_32 text-color">Mobile game marketing: Essential strategies made simple</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <header class="dp-flex fd-column">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">5 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/trends-insights/online-offline-retail/">
+                                        <span class="margin-0 padg-top_15 fsize-19 fw-600 linehei_32 text-color">Bridging the gap between online and offline retail</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <header class="dp-flex fd-column">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">7 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/measurement-analytics/skan-vs-sandbox/">
+                                        <span class="margin-0 padg-top_15 fsize-19 fw-600 linehei_32 text-color">SKAN vs. Sandbox: what advertisers need to know</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                        <article class="dp-flex nav_aitems-flexstart fd-column mb-20">
+                            <header class="dp-flex fd-column">
+                                <div class="dp-flex fd-column">
+                                    <div class="dp-flex flex_fw-wrap padg-bot_2-5 padg-l_2-5 padg-r_2-5 fsize-timeline let-space_1 text-color">
+                                        <span class="dp-flex nav_aitems-center">7 min read</span>
+                                    </div>
+                                    <a class="dp-block nav_aitems-center color-text text-deco_none" href="https://www.appsflyer.com/blog/measurement-analytics/overcome-signal-loss/">
+                                        <span class="margin-0 padg-top_15 fsize-19 fw-600 linehei_32 text-color">How to overcome signal loss by building a new data reality</span>
+                                    </a>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="banner dp-flex nav-main_pr padg-top_0 btn-textsub fw-400">
+            <div class="m-width-1260 ml-auto mr-auto padg-l_20 padg-r_20 nav-size">
+                <div class="dp-flex nav-main_pr flex_fw-wrap flex_fd-row ml-0 mr-0 oflow-hidden padg-bot_40 padg-top_40 bg-banner bord-rad_16">
+                    <img class="aut-image z-ind_0" src="/image/img-cta-banner-bg.webp" alt="">
+                    <div class="dp-flex nav-main_pr nav_aitems-center flex_gr-shr-basic-58-3per fd-column flex_jc-center ml-auto mr-auto padg-l_20 padg-r_20 m-width-58-5per nav-size z-ind_1 talign-center">
+                        <header>
+                            <span class="mb-5 fsize-56 fw-700 linehei_60">Ready to start making good choices?</span>
+                        </header>
+                        <footer class="dp-flex nav_aitems-center flex_fd-row flex_jc-fs padg-bot_20 padg-top_20">
+                            <a class="signup-btn btn-banner-size fsize-header-16 linehei_18 nav_db nav-main_pr z-ind_1 talign-center fw-500 text-deco_none text-article verti-ali-mid bord-rad_8 boxshadow-none ouline-none" href="https://www.appsflyer.com/start/demo/">Contact sales</a>
+                            <a class="dp-flex nav-main_pr nav_aitems-center ml-50 mt-0 padg_10-0-imp s-links fw-500 text-deco_none verti-ali-mid btn-banner-color arrow-btn" href="https://www.appsflyer.com/interactive-product-tours/">Sign up free</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer nav-main_pr ml-auto mr-auto padg-l_20 padg-r_20 padg-top_90 m-width-1260 nav-size z-ind_1 snav_fsize-18 fw-400 color-text">
+        <div class="footer-top nav_df flex_fd-row flex_fw-wrap flex_jc-sb snav-menu padg-bot_20 width-unset">
+            <div class="nav-main_pr flex-fill flex-shr_0 m-width-100 padg-l_20 padg-r_20 nav-size">
+                <h3 class="nav_df flex_jc-sb padg-bot_10 nav-size font-menulist linehei_32 let-space_0-9 text-uppercase text-color mblock-0">Platform</h3>
+                <ul class="padg-bot_30">
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/measurement/">Measurement suite</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/roi-measurement/">ROI Measurement</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/marketing-analytics/">Marketing analytics</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/incrementality/">Incrementality</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/customer-experience-deep-linking/">CX & deep linking</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/audiences/">Audience segmentation</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/fraud-protection/">Fraud protection</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/apis/">Raw data & APIs</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/integrations/">Partner marketplace</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/ios/">AppsFlyer for iOS</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/products/privacy-cloud/">Privacy Cloud</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/pricing/">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-main_pr flex-fill flex-shr_0 m-width-100 padg-l_20 padg-r_20 nav-size">
+                <h3 class="nav_df flex_jc-sb padg-bot_10 nav-size font-menulist linehei_32 let-space_0-9 text-uppercase text-color mblock-0">Solutions</h3>
+                <ul class="padg-bot_30">
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/games/">Gaming</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/shopping/">Shopping</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/food-drink/">Food & drink</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/entertainment-music/">Entertainment & music</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/finance/">Finance</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/health-fitness/">Health & fitness</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/travel/">Travel</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/zero-budget-marketing/">Zero budget marketing</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/aws/">AWS</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/partners/">Integrated partners</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/partners/">Tech and media partners</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/agencies/">Agency partners</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/solutions/partner-program/">Partner Program</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-main_pr flex-fill flex-shr_0 m-width-100 padg-l_20 padg-r_20 nav-size">
+                <h3 class="nav_df flex_jc-sb padg-bot_10 nav-size font-menulist linehei_32 let-space_0-9 text-uppercase text-color mblock-0">Why AppsFlyer</h3>
+                <ul class="padg-bot_30">
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/customers/">Customers success stories</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/appsflyer-advantage/">The AppsFlyer difference</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/trust/">Trust hub</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/trust/security/">Security</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-main_pr flex-fill flex-shr_0 m-width-100 padg-l_20 padg-r_20 nav-size">
+                <h3 class="nav_df flex_jc-sb padg-bot_10 nav-size font-menulist linehei_32 let-space_0-9 text-uppercase text-color mblock-0">Learn</h3>
+                <ul class="padg-bot_30">
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/blog/">Blog</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/blog/videos/">Videos</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/blog/podcasts/">Podcast</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/resources/">Reports & guides</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/resources/webinars/">Webinars on-demand</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/glossary/">Glossary</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/product-news/">Product news</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/use-cases/">Use cases</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/metrics-comparison/">Metrics comparison</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/benchmarks/">Industry benchmarks</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://support.appsflyer.com/hc/en-us">Help center</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/sitemap/">Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-main_pr flex-fill flex-shr_0 m-width-100 padg-l_20 padg-r_20 nav-size">
+                <h3 class="nav_df flex_jc-sb padg-bot_10 nav-size font-menulist linehei_32 let-space_0-9 text-uppercase text-color mblock-0">Company</h3>
+                <ul class="padg-bot_30">
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/company/about/">About</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/company/newsroom/">Newsroom</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/company/newsroom/pr/">Press releases</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/company/newsroom/coverage/">Media coverage</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/blog/ceo/">CEO blog spot</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://careers.appsflyer.com/">Careers</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/company/social-impact/">Social impact</a>
+                    </li>
+                    <li class="padg-bot_1-5 padg-top_1-5">
+                        <a class="dis_inl-block fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/company/contact/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-mid dp-flex flex_fw-wrap ml--20 mr--20">
+            <div class="footer-social dp-flex nav-main_pr nav_aitems-center flex-fill flex_jc-sb m-width-100 ml-20 mr-20 padg-top_20 padg-bot_20 nav-size aut-box border-footer-social">
+                <nav class="social-link">
+                    <ul class="dp-flex nav_aitems-center flex_fw-wrap flex_fd-row flex_jc-fs">
+                        <li class="mr-20">
+                            <a class="snav_fsize-20 linehei-20 btn-textsub text-deco_none" href="https://www.facebook.com/AppsFlyer">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="mr-20">
+                            <a class="snav_fsize-20 linehei-20 btn-textsub text-deco_none" href="https://www.linkedin.com/company/appsflyer/">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="mr-20">
+                            <a class="snav_fsize-20 linehei-20 btn-textsub text-deco_none" href="https://twitter.com/AppsFlyer">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="mr-20">
+                            <a class="snav_fsize-20 linehei-20 btn-textsub text-deco_none" href="https://www.instagram.com/appsflyer_hq/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="mr-20">
+                            <a class="snav_fsize-20 linehei-20 btn-textsub text-deco_none" href="https://www.youtube.com/c/Appsflyer">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="mr-20">
+                            <a class="snav_fsize-20 linehei-20 btn-textsub text-deco_none" href="https://medium.com/appsflyer">
+                                <i class="fa-brands fa-medium"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <figure class="footer-logo margin-0">
+                    <a class="fsize-header-14 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com">
+                        <img class="m-width-100" src="/image/img-appsflyer-logo-dark.svg" alt="">
+                    </a>
+                </figure>
+            </div>
+        </div>
+        <div class="footer-bot dp-flex flex_fw-wrap ml--20 mr--20">
+            <div class="footer-link dp-flex nav-main_pr flex-fill flex_fd-row flex_fw-wrap flex_jc-sb m-width-100 nav-size padg-bot_30 padg-top_30 padg-l_20 padg-r_20">
+                <nav class="fsize-header-14">
+                    <ul class="dp-flex">
+                        <li class="padg-r_40"><a class="dis_inl-block fsize-header-13 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/legal/site-terms/">Terms</a></li>
+                        <li class="padg-r_40"><a class="dis_inl-block fsize-header-13 linehei-20 text-footer-color text-deco_none" href="https://www.appsflyer.com/legal/privacy-policy/">Privacy policy</a></li>
+                    </ul>
+                </nav>
+                <div class="fsize-header-13 text-footer-color">©2024 AppsFlyer Ltd. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+        var parents = document.querySelectorAll('.parent');
+
+        parents.forEach(function(parent) {
+            parent.addEventListener('click', function() {
+                var child = parent.querySelector('.child');
+                
+                child.classList.toggle('on');
+            });
+        });
+
+        window.onscroll = function() {
+            updateProgressBar();
+        };
+
+        function updateProgressBar() {
+            var footerHeight = document.querySelector(".footer").offsetHeight;
+            var reArticleHeight = document.querySelector(".re-article").offsetHeight;
+            var bannerHeight = document.querySelector(".banner").offsetHeight;
+
+            var scrollHeight = document.documentElement.scrollHeight - footerHeight - reArticleHeight - bannerHeight - document.documentElement.clientHeight;
+            
+            var scrollPosition = document.documentElement.scrollTop;
+
+            var scrollPercentage = (scrollPosition / scrollHeight) * 100;
+
+            document.querySelector(".progress-bar").style.width = scrollPercentage + "%";
+        }
+</script>
+
+
+</body>
+</html>
