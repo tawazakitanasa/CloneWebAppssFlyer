@@ -432,12 +432,10 @@ body {
     font-size: 11px;
 }
 
-/* #nav-list li a {
+#nav-list li a {
     color: inherit;
     text-decoration: none;
-    line-height: 68px;
-    padding: 0 18px;
-} */
+}
 
 .links {
     border-color: #e3e1e8;
@@ -1513,7 +1511,7 @@ ol li.side-bar::before {
     .mr-auto {
         margin-right: auto !important;
     }
-    .nav-menu {
+    .nav-menu, .single-nav {
         padding: 22px 6px !important;
     }
 
@@ -1521,7 +1519,7 @@ ol li.side-bar::before {
 
 @media only screen and (min-width:1025px) and (min-width:1200px) {
 
-    .nav-menu {
+    .nav-menu, .single-nav {
         padding: 22px 18px !important;
         width: 100%;
     }
