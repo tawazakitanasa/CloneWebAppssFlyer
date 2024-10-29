@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Định dạng chung cho navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            background-color: #fff;
+            position: relative;
+            z-index: 1000;
+        }
+
+        /* Định dạng cho menu */
+        .menu {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Phần tử menu bên trái */
+        .menu-left {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        /* Phần tử menu bên phải */
+        .menu-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu li {
+            margin: 0;
+            font-size: 17px;
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        .menu li:hover {
+            color: #00c2ff;
+        }
+
+        .menu-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        @media (max-width: 1024px) {
+            .navbar {
+                padding: 15px;
+            }
+
+            /* Ẩn toàn bộ menu-container */
+            .menu-container {
+                visibility: hidden; /* Ẩn menu bằng visibility */
+                opacity: 0;/* Đảm bảo ban đầu menu sẽ không hiển thị */
+                flex-direction: column;
+                position: fixed;
+                top: 50px;
+                right: 0;
+                width: 60%;
+                height: calc(100vh - 50px);
+                background-color: white;
+                z-index: 999;
+                transition: visibility 0s, opacity 0.5s ease;
+                box-shadow: none;/* Loại bỏ box-shadow */
+                overflow: hidden;
+            }
+
+            /* Hiển thị menu-container khi class 'show' được thêm vào */
+            .menu-container.show {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            /* Các phần tử li trượt vào từ trái và có hiệu ứng mờ dần */
+            .menu li {
+                font-size: 20px;
+                padding: 20px;
+                border-bottom: 1px solid #eaeaea;
+            }
+
+            /* Khi menu-container hiển thị, các phần tử li bắt đầu xuất hiện */
+            .menu-container.show .menu li {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            /* Phần tử menu bên trái */
+            .menu-left {
+                display: flex;
+                flex-direction: column; /* Xếp các phần tử theo hàng dọc */
+                align-items: flex-start; /* Căn trái cho các phần tử */
+                width: 100%; /* Chiếm toàn bộ chiều rộng */
+            }
+
+            .menu-left .menu {
+                flex-direction: column; /* Xếp các phần tử theo hàng dọc */
+                align-items: flex-start; /* Căn trái cho các phần tử */
+                width: 100%;
+            }
+
+            /* Các phần tử li trong menu-left */
+            .menu-left .menu li {
+                width: 100%; /* Chiếm toàn bộ chiều rộng của menu-left */
+                opacity: 0; /* Đảm bảo bắt đầu với độ mờ */
+                transform: translateX(-50px); /* Trượt từ trái */
+                transition: opacity 0.5s ease, transform 0.5s ease;
+                padding: 20px; /* Padding cho li */
+                border-bottom: 1px solid #eaeaea; /* Đường viền dưới cho mỗi mục */
+            }
+
+            /* Phần tử menu bên phải */
+            .menu-right {
+                display: flex;
+                flex-direction: column; /* Xếp các phần tử theo hàng dọc */
+                align-items: flex-start; /* Căn trái cho các phần tử */
+                width: 100%; /* Chiếm toàn bộ chiều rộng */
+                margin-bottom: 60px;
+            }
+
+            .menu-right .menu {
+                flex-direction: column; /* Xếp các phần tử theo hàng dọc */
+                align-items: flex-start; /* Căn trái cho các phần tử */
+                width: 100%;
+            }
+
+            /* Các phần tử li trong menu-left */
+            .menu-right .menu li {
+                width: 100%; /* Chiếm toàn bộ chiều rộng của menu-left */
+                opacity: 0; /* Đảm bảo bắt đầu với độ mờ */
+                transform: translateX(-50px); /* Trượt từ trái */
+                transition: opacity 0.5s ease, transform 0.5s ease;
+                padding: 20px; /* Padding cho li */
+                border-bottom: 1px solid #eaeaea; /* Đường viền dưới cho mỗi mục */
+            }
+
+            .menu-right .btn-account li {
+                opacity: 0; /* Đảm bảo bắt đầu với độ mờ */
+                transform: translateX(-50px); /* Trượt từ trái */
+                transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+
+            .menu-right .button-group {
+                width: 100%;
+                flex-direction: row;
+                margin-top: auto;
+            }
+
+            .menu-right .button-group .btn-account li {
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            /* Khi menu-container hiển thị, các phần tử li bắt đầu xuất hiện */
+            .menu-container.show .menu-left .menu li, .menu-container.show .menu-right .button-group .btn-account li {
+                opacity: 1; /* Hiển thị từng mục */
+                transform: translateX(0); /* Trở lại vị trí ban đầu */
+            }
+
+            /* Độ trễ cho các phần tử li trong menu-left */
+            .menu-container.show .menu-left .menu li:nth-child(1) { transition-delay: 0.1s; }
+            .menu-container.show .menu-left .menu li:nth-child(2) { transition-delay: 0.2s; }
+            .menu-container.show .menu-left .menu li:nth-child(3) { transition-delay: 0.3s; }
+            .menu-container.show .menu-left .menu li:nth-child(4) { transition-delay: 0.4s; }
+            .menu-container.show .menu-left .menu li:nth-child(5) { transition-delay: 0.5s; }
+            .menu-container.show .menu-right .menu li:nth-child(1) { transition-delay: 0.6s; }
+            .menu-container.show .menu-right .button-group .btn-account li:nth-child(1) { transition-delay: 0.1s; }
+            .menu-container.show .menu-right .button-group .btn-account li:nth-child(2) { transition-delay: 0.2s; }
+            .menu-container.show .menu-right .button-group .btn-account li:nth-child(3) { transition-delay: 0.3s; }
+
+            .menu-icon {
+                display: block;
+                color: #220d4e;
+                cursor: pointer;
+                font-size: 18px;
+            }
+
+            .menu-icon:hover {
+                color: #00c2ff;
+            }
+
+            .menu-container {
+                display: flex;
+                align-items: flex-start; /* Căn đầu lên cho menu bên trái và phải */
+                justify-content: space-between;
+                flex-grow: 1;
+            }
+
+            .menu-left {
+                flex: 0 0 auto; /* Không cho menu-left mở rộng */
+            }
+
+            .menu-right {
+                flex: 1; /* Để menu-right lấp kín không gian còn lại */
+                display: flex;
+                flex-direction: column; /* Xếp các phần tử theo hàng dọc */
+                align-items: flex-start; /* Căn trái cho các phần tử */
+                margin-bottom: 60px;
+            }
+        }
+
+        /* Định dạng cho các nút */
+        .button-group ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .button-group ul li {
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px 15px;
+            background-color: #00c2ff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            align-content: center;
+        }
+
+        .button-group ul li:hover {
+            background-color: #0098c8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">Logo</div>
+            <!-- Thẻ div cha lớn chứa cả menu trái và phải -->
+            <div class="menu-container">
+                <!-- Menu bên trái chứa các nav -->
+                <div class="menu-left">
+                    <ul class="menu">
+                        <li onclick="location.href='#'">Platform</li>
+                        <li onclick="location.href='#'">Solutions</li>
+                        <li onclick="location.href='#'">Learn</li>
+                        <li onclick="location.href='#'">Company</li>
+                        <li onclick="location.href='#'">Pricing</li>
+                    </ul>
+                </div>
+
+                <!-- Menu bên phải chứa Language và các nút -->
+                <div class="menu-right">
+                    <ul class="menu">
+                        <li onclick="location.href='#'">Language</li>
+                    </ul>
+
+                    <!-- Các nút như Login, Sign up, Contact -->
+                    <div class="button-group">
+                        <ul class="btn-account">
+                            <li onclick="location.href='#'">Login</li>
+                            <li onclick="location.href='#'">Sign up free</li>
+                            <li onclick="location.href='#'">Contact sales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i> <!-- Icon menu hamburger -->
+            </div>
+        </nav>
+    </div>
+      
+    <script>
+        const menuIcon = document.querySelector('.menu-icon i');
+        const menuContainer = document.querySelector('.menu-container');
+
+        menuIcon.addEventListener('click', () => {
+            menuContainer.classList.toggle('show');  // Thêm hoặc bỏ class 'show' cho menu-container
+            
+            // Thay đổi icon giữa hamburger và dấu "x"
+            if (menuContainer.classList.contains('show')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');  // Chuyển thành dấu "x"
+            } else {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');   // Chuyển lại thành hamburger
+            }
+        });
+    </script>
+</body>
+</html>

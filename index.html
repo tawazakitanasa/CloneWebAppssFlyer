@@ -14,12 +14,12 @@
 </head>
 <body>
     <nav id="nav-m" class="nav-height nav_df nav-size nav-main nav-main_pfi nav_row-start nav_aitems-center z-index_777">
-        <div class="nav_df nav-size">
-            <a class="nav-logo nav_aitems-center flex_jc-sb" href="https://www.appsflyer.com"><img src="/image/logo.svg" alt="Logo"></a>
-            <div class="nav_df nav-size">
-                <ul id="nav-list" class="nav-navbar nav_df nav-size nav-main_pr flex_fd-row mr-auto lstyle-none">
+        <div class="navbar nav_df nav-size nav_aitems-center flex_fw-nowrap flex_jc-sb mr-auto ml-auto padg-l_0 padg-r_0">
+            <a class="navbar-brand" href="https://www.appsflyer.com"></a>
+            <div class="nav_df nav_aitems-center flex-bs_auto flex_fd-row padg-l_0 padg-r_0 padg-top_0">
+                <ul id="nav-list" class="nav-navbar nav_df nav-main_pr flex_fd-row mr-auto lstyle-none">
                     <li id="nav-btn" class="parent nav_df nav-main_pr">
-                        <a class="nav-menu curs-pointer">Platform</a>
+                        <a class="nav-menu dp-flex nav-main_pr nav_aitems-center z-index_778 curs-pointer">Platform</a>
                         <div id="nav-link" class=" child menuitmes nav_disp-none nav-main_pfi fd-column oflow-hidden">
                             <div class="nav-subnav nav-main_pr flex_jc-sb nav_aitems-stretch flex_fw-wrap mr-auto ml-auto">
                                 <div class="nav_df">
@@ -134,7 +134,7 @@
                         </div>
                     </li>
                     <li id="nav-btn" class="parent nav_df nav-main_pr">
-                        <a class="nav-menu curs-pointer">Solutions</a>
+                        <a class="nav-menu dp-flex nav-main_pr nav_aitems-center z-index_778 curs-pointer">Solutions</a>
                         <div id="nav-link" class="child menuitmes nav_disp-none nav-main_pfi fd-column oflow-hidden">
                             <div class="nav-subnav nav-main_pr flex_jc-sb nav_aitems-stretch flex_fw-wrap mr-auto ml-auto">
                                 <div class="nav_df">
@@ -308,7 +308,7 @@
                         </div>
                     </li>
                     <li id="nav-btn" class="parent nav_df nav-main_pr">
-                        <a class="nav-menu curs-pointer">Learn</a>
+                        <a class="nav-menu dp-flex nav-main_pr nav_aitems-center z-index_778 curs-pointer">Learn</a>
                         <div id="nav-link" class="child menuitmes nav_disp-none nav-main_pfi fd-column oflow-hidden">
                             <div class="nav-subnav nav-main_pr flex_jc-sb nav_aitems-stretch flex_fw-wrap mr-auto ml-auto">
                                 <div class="nav_df flex_fw-wrap">
@@ -420,7 +420,7 @@
                         </div>
                     </li>
                     <li id="nav-btn" class="parent nav_df nav-main_pr">
-                        <a class="nav-menu curs-pointer">Company</a>
+                        <a class="nav-menu dp-flex nav-main_pr nav_aitems-center z-index_778 curs-pointer">Company</a>
                         <div id="nav-link" class="child menuitmes nav_disp-none nav-main_pfi fd-column oflow-hidden">
                             <div class="nav-subnav nav-main_pr flex_jc-sb nav_aitems-stretch flex_fw-wrap mr-auto ml-auto">
                                 <div class="nav_df flex_fw-wrap">
@@ -560,7 +560,7 @@
         </div>
     </nav>
     <nav id="" class="sub-nav nav_df nav-main_pfi nav_aitems-center nav_row-start nav-main nav-size snav-size snav_fsize-18 color-text snav-border .z-index_776">
-        <div class="nav_df nav_aitems-center flex_fw-nowrap flex_jc-sb m-width-1440 nav-size">
+        <div class="nav_df nav_aitems-center flex_fw-nowrap flex_jc-sb nav-size">
             <span class="snav_fsize-20 nav-text-color">
                 <a class="dis_inl-block nav-text-color snav-blog" href="https://www.appsflyer.com/blog/">Blog</a>
             </span>
@@ -602,7 +602,7 @@
             </div>
         </div>
         <div class="progress-container">
-            <div class="progress-bar"></div>
+            <div class="progress-bar dp-flex"></div>
         </div>
     </nav>    
     <main class="container padg-top_130 snav_fsize-18 color-text">
@@ -1295,6 +1295,16 @@
 
             document.querySelector(".progress-bar").style.width = scrollPercentage + "%";
         }
+
+        const navbar = document.querySelector('.sub-nav');
+
+        window.addEventListener('scroll', function() {
+        if (window.scrollY > 0) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        });
 </script>
 
 
